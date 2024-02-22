@@ -1,0 +1,1052 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010127;
+}
+
+.parentsect {
+    opacity: 0;
+    animation: animatecontect 3s ease forwards;
+}
+
+.parentsect .active {
+    display: none;
+}
+
+@keyframes animatecontect {
+    to {
+        opacity: 1;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 70px;
+    align-items: center;
+    padding-inline: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    transition: background-color 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px 5px black;
+
+}
+
+header.scrolled {
+    background-color: #150b43;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+hr {
+    position: relative;
+    bottom: 460px;
+
+}
+
+.headul {
+    display: flex;
+    gap: 70px;
+    margin-left: 320px;
+}
+
+.lists {
+    list-style: none;
+    transition: 0.4s all ease;
+    font-size: larger;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Bungee Spice', sans-serif;
+    width: fit-content;
+}
+
+.lists:hover {
+    color: #000;
+    background-color: #009a73;
+    font-size: 25px;
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.lists:active {
+    background-color: rgb(3, 253, 128);
+}
+
+li::marker {
+    color: white;
+}
+
+i {
+    color: rgb(226, 106, 0);
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.account {
+    background: linear-gradient(to bottom, #F0B000,
+            #F029A0);
+    border-radius: 12px;
+    padding: 5px;
+    width: 150px;
+    transition: 0.4s;
+    border: 2px solid;
+}
+
+.account:hover {
+    box-shadow: 0px 0px 10px 3px rgb(3, 253, 128);
+    border-radius: 10px;
+}
+
+.fa-gamepad {
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.fa-store {
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.count {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.fa-2xl {
+    transition: 0.4s;
+}
+
+.fa-2xl:hover {
+    box-shadow: 0px 0px 20px 7px rgb(3, 253, 128);
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.btns .fa-bars {
+    display: none !important;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+
+
+.navanchor {
+    color: rgb(226, 106, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+
+.account {
+    color: black;
+    -webkit-text-stroke: black 0px;
+
+}
+
+.secnavbar {
+    width: 100%;
+    height: 200vh;
+    background-color: #201553;
+    display: none;
+    z-index: 2;
+}
+
+.secnavbar.active {
+    display: block;
+    z-index: 999999999999;
+    margin: auto;
+    z-index: 2;
+}
+
+
+
+.respo {
+    display: flex;
+    flex-direction: column;
+}
+
+.secul {
+    margin-top: 200px !important;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.navanchor2 {
+    font-size: 50px;
+}
+
+/* ------------------------------------- */
+
+h1 {
+    width: fit-content;
+}
+
+p {
+    width: fit-content;
+}
+
+.sect1 {
+    height: 1240px;
+}
+
+.hello {
+    width: 100%;
+    height: 1170px;
+    object-fit: cover;
+    filter: contrast(1.3);
+}
+
+.hellotext {
+    position: relative;
+    top: 100px;
+    left: 2.5%;
+    width: 910px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    z-index: 1;
+}
+
+
+.Gdesign {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #00FADF;
+    position: absolute;
+    font-size: 55px;
+    margin-top: 9%;
+    left: 2.5%;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.webname {
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 55px;
+    left: 2.5%;
+    z-index: 1;
+    font-size: 130px;
+    -webkit-text-stroke: #000 3px;
+}
+
+.webinfo {
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+    font-family: 'Jim Nightshade', cursive;
+    position: absolute;
+    font-size: 50px;
+    margin-top: 5%;
+    left: 2.5%;
+    width: 885px;
+    font-weight: bolder;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.firstblursect {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    bottom: 782px;
+}
+
+.firstblurr {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.lastestwork {
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    z-index: 1;
+    position: relative;
+    bottom: 43%;
+    display: flex;
+    gap: 90px;
+}
+
+.left {
+    position: relative;
+    left: 60px;
+    top: 60px;
+}
+
+.cyberph {
+    width: 337px;
+    height: 217px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px;
+    transition: 0.4s all ease;
+    animation: float 3s linear infinite;
+
+}
+
+.cyberph:hover {
+    cursor: pointer;
+    box-shadow: #00FADF 0px 0px 20px 5px;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+.right {
+    position: relative;
+    top: 85px;
+}
+
+.lastwork {
+    color: #00FADF;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30px;
+}
+
+.lastworkinfo {
+    color: white;
+    margin-top: 10px;
+    font-family: cursive;
+}
+
+.firstview {
+    color: white;
+    margin-top: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s all ease;
+    width: fit-content;
+    font-size: 30px;
+}
+
+.firstview:hover {
+    color: #CAFF00;
+    cursor: pointer;
+}
+
+.enter {
+    width: 70px;
+    position: relative;
+    top: 19px;
+}
+
+.portfolio {
+    position: relative;
+    bottom: 750px;
+    left: 60px;
+    width: fit-content;
+    z-index: 2;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
+
+}
+
+.left2 {
+    width: 25%;
+    height: 1100px;
+}
+
+.one {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 60px;
+    margin-left: 70px;
+    margin-top: 65px;
+}
+
+.firstshooter {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-left: -35px;
+    margin-top: 300px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    font-size: 20px;
+}
+
+.right {
+    width: 75%;
+}
+
+.firstph {
+    margin-top: 40px;
+    width: 80vw;
+    height: 660px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.firstsecttext {
+    display: flex;
+}
+
+.barlogtext {
+    color: #00FADF;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-top: 20px;
+    margin-left: 40px;
+    letter-spacing: 0.45rem;
+    font-size: 60px;
+}
+
+.enter2 {
+    width: 105px;
+    height: 90px;
+    margin-top: 12px;
+}
+
+.designsecttext {
+    color: white;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.firstparagraph {
+    font-family: cursive;
+    color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 530px;
+    font-size: 17px;
+}
+
+.firstviewbtn {
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 210px;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: transparent;
+    border: white solid 1px;
+    outline: none;
+    color: white;
+    transition: 0.5s all ease;
+}
+
+.viewgame {
+    color: white;
+    font-weight: 200;
+    transition: 0.5s all ease;
+
+}
+
+.firstviewbtn:hover {
+    background-color: #9dff00;
+    color: black;
+
+    .viewgame {
+        color: black;
+    }
+}
+
+.sect3 {
+    width: 100%;
+    height: 1100px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+    display: flex;
+}
+
+.survival {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-left: 35px;
+    margin-top: 300px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    font-size: 20px;
+}
+
+.sect4 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.allgamesent {
+    display: flex;
+    width: 50%;
+}
+
+.left3 {
+    width: 50%;
+    height: 460px;
+}
+
+.characters {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 60px;
+    position: relative;
+    left: 50px;
+    top: 350px;
+    width: fit-content;
+    align-items: flex-end;
+}
+
+.allgames {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 60px;
+    position: relative;
+    top: 25px;
+    width: fit-content;
+    transition: 0.3s all ease;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.allgames:hover {
+    color: #9dff00;
+}
+
+.right3 {
+    width: 50%;
+    height: 460px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.viewgameenter {
+    width: 105px;
+    height: 90px;
+    margin-top: 18px;
+}
+
+.enterall {
+    align-items: center;
+    position: relative;
+    left: 655px;
+    top: 19px;
+}
+
+.sect2 {
+    margin-top: 60px;
+    width: 100%;
+    height: 1100px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+    display: flex;
+}
+
+.sect5 {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+    padding-bottom: 400px;
+}
+
+.rowcontainer {
+    display: flex;
+
+}
+
+
+.row1 {
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: auto;
+}
+
+.card {
+    width: 736px;
+    height: 1000px;
+    transition: 0.5s all ease;
+    border-radius: 30px;
+}
+
+.firstcard {
+    margin-left: 45px;
+}
+
+.card:hover {
+    transform: scale(1.06);
+}
+
+.cardimg1 {
+    width: 736px;
+    height: 1000px;
+    position: relative;
+    top: 20px;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: 0.5s all ease;
+}
+
+.cardimg1:hover {
+    box-shadow: 0px 0px 15px 3px white;
+    cursor: pointer;
+}
+
+.row1:hover .card {
+    opacity: 0.5;
+    filter: blur(3px);
+}
+
+.row1 .card:hover {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.avatar {
+    color: #00FADF;
+    font-family: 'Chakra Petch', sans-serif;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    font-size: 40px;
+    letter-spacing: 0.30rem;
+}
+
+.gamename {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    color: white;
+    font-weight: 100;
+}
+
+.allchatacters {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 60px;
+    position: relative;
+    left: 67%;
+    top: 350px;
+    width: fit-content;
+    transition: 0.3s all ease;
+    height: fit-content;
+    cursor: pointer;
+    display: none;
+}
+
+.allchatacters:hover {
+    color: #9dff00;
+}
+
+.entercharacter {
+    width: 150px;
+    position: relative;
+    left: 93.7%;
+    top: 250px;
+    display: none;
+
+}
+
+
+
+/* მეექვსე სექცია */
+.sect6 {
+    width: 100%;
+    height: 400px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    justify-content: center;
+}
+
+.footer {
+    padding: 70px;
+}
+
+.footer-col {
+    width: 25%;
+    height: 200px;
+}
+
+.contactanchor {
+    left: 2px;
+    width: fit-content;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 23px !important;
+}
+
+.footsocContainer {
+    margin-top: 20px;
+}
+
+.footsocial2 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.footer-col h4 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li a {
+    position: relative;
+    right: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.lorem1 {
+    width: 290px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.loremcont {
+    list-style: none;
+}
+
+.footsub {
+    display: flex;
+    flex-direction: column;
+}
+
+.inptlab {
+    position: relative;
+    color: grey;
+    width: fit-content;
+}
+
+.eminpt {
+    position: relative;
+    background-color: transparent;
+    border: 1px grey solid;
+    height: 40px;
+    width: 300px;
+    color: white;
+    padding: 10px;
+}
+
+.subbtn {
+    top: 10px;
+    position: relative;
+    background-color: orangered;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.subbtn:hover {
+    background-color: #ff8000;
+}
+
+.social-links {
+    position: relative;
+
+}
+
+.footer-col .social-links .footsocial {
+
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links .footsocial:hover {
+    color: black;
+    background-color: #ffffff;
+}
+
+/* მას google chrome_ის inspect_ში რომ გადავედი ზემოთ ეწერა ტაბლეტის და ტელეფონების ზომები და იმ სომებზე განვალაგე რესპონსიურობა */
+@media screen and (max-width: 1440px) {
+    .headul {
+        margin-left: 50px;
+    }
+
+    .card {
+        width: 400px;
+        height: 500px;
+    }
+
+    .cardimg1 {
+        width: 400px;
+        height: 500px;
+
+    }
+
+    .hiddenName {
+        display: none;
+    }
+
+    .rowcontainer {
+        display: flex;
+        gap: 20px;
+        padding-right: 6px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .headul {
+        gap: 20px;
+        margin-right: 210px;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .rowcontainer {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        width: 290px;
+        height: 400px;
+    }
+
+    .cardimg1 {
+        width: 290px;
+        height: 400px;
+
+    }
+
+    .hiddenName2 {
+        display: none;
+    }
+
+    .allgames {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .headul {
+        margin-right: 25px;
+        margin-left: 0%;
+    }
+
+    .btns .fa-bars {
+        display: none;
+    }
+
+    .firstcard {
+        margin-left: 0%;
+    }
+
+    .card {
+        width: 400px;
+        height: 500px;
+    }
+
+    .cardimg1 {
+        width: 400px;
+        height: 500px;
+    }
+
+    .hiddenName {
+        display: none;
+    }
+
+    .rowcontainer {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hellotext {
+        width: 700px;
+    }
+
+    .webname {
+        font-size: 100px;
+    }
+
+    .webinfo {
+        font-size: 30px;
+        width: 400px !important;
+    }
+
+    .row1 {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .footsocial2::before {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .barlogtext {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    header ul {
+        display: none !important;
+    }
+
+    .fa-bars {
+        display: inline-block !important;
+    }
+
+    .btns {
+        margin: auto;
+        gap: 20px;
+    }
+
+    .firstph {
+        width: 590px;
+    }
+
+
+
+}

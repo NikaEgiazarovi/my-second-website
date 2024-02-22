@@ -1,0 +1,982 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010127;
+}
+
+.parentsect {
+    opacity: 0;
+    animation: animatecontect 3s ease forwards;
+}
+
+.parentsect .active {
+    display: none;
+}
+
+@keyframes animatecontect {
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 70px;
+    align-items: center;
+    padding-inline: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    transition: background-color 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px 5px black;
+
+}
+
+header.scrolledsecond {
+    background-color: #150b43;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+hr {
+    position: relative;
+    bottom: 460px;
+
+}
+
+.headul {
+    display: flex;
+    gap: 70px;
+    margin-left: 320px;
+}
+
+.lists {
+    list-style: none;
+    transition: 0.4s all ease;
+    font-size: larger;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Bungee Spice', sans-serif;
+    width: fit-content;
+}
+
+.lists:hover {
+    color: #000;
+    background-color: #009a73;
+    font-size: 25px;
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.lists:active {
+    background-color: rgb(3, 253, 128);
+}
+
+li::marker {
+    color: white;
+}
+
+i {
+    color: rgb(226, 106, 0);
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.account {
+    background-color: rgb(226, 106, 0);
+    border-radius: 12px;
+    padding: 5px;
+    width: 150px;
+    transition: 0.4s;
+    border: 2px solid;
+}
+
+
+.Registrer:hover {
+    box-shadow: 0px 0px 10px 3px rgb(3, 253, 128);
+    border-radius: 10px;
+}
+
+.fa-gamepad {
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.fa-store {
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.count {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.fa-2xl {
+    transition: 0.4s;
+}
+
+.fa-2xl:hover {
+    box-shadow: 0px 0px 20px 7px rgb(3, 253, 128);
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+}
+
+
+.navanchor {
+    color: rgb(226, 106, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+
+.account {
+    background: linear-gradient(to bottom, #F0B000,
+            #F029A0);
+    border-radius: 12px;
+    padding: 5px;
+    width: 150px;
+    transition: 0.4s;
+    border: 2px solid;
+}
+
+
+.account:hover {
+    box-shadow: 0px 0px 10px 3px rgb(3, 253, 128);
+    border-radius: 10px;
+}
+
+.secnavbar {
+    width: 100%;
+    height: 100%;
+    background-color: #201553;
+    display: none;
+}
+
+.secnavbar.active {
+    display: block;
+    margin: auto;
+
+}
+
+.respo {
+    display: flex;
+    flex-direction: column;
+}
+
+.secul {
+    margin-top: 200px !important;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.navanchor2 {
+    font-size: 50px;
+}
+
+.sect1 {
+    height: 80px;
+}
+
+@keyframes gradient {
+
+    0% {
+
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+
+        background-position: 0% 50%;
+
+    }
+
+}
+
+.nonesect {
+    height: 70px;
+}
+
+.sect1 {
+    width: 100%;
+    height: 130px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+    display: flex;
+}
+
+
+.maingamename {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #09f1b8;
+    font-size: 70px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.sect2 {
+    width: 100%;
+    height: 380px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+.row1 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left1 {
+    width: 48%;
+    height: 340px;
+}
+
+.verticalstroke {
+    width: 2px;
+    height: 250px;
+    margin-top: 43px !important;
+    background-color: white;
+}
+
+.right1 {
+    width: 52%;
+    height: 340px;
+}
+
+.role {
+    color: white;
+    padding-top: 60px;
+    padding-left: 60px;
+    font-size: 18px;
+}
+
+.designer {
+    padding-top: 5px;
+    margin-left: 60px;
+    font-weight: 100;
+    color: white;
+}
+
+.description {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-left: 60px;
+    padding-top: 50px;
+}
+
+.descripP {
+    width: 400px;
+    color: white;
+    margin-left: 60px;
+    padding-top: 15px;
+    font-family: cursive;
+}
+
+.year {
+    color: white;
+    padding-top: 50px;
+    margin-left: 60px;
+
+}
+
+.date {
+    color: white;
+    padding-top: 7px;
+    margin-left: 65px;
+    font-size: 19px;
+    font-family: cursive;
+
+}
+
+.genre {
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-left: 60px;
+    padding-top: 35px;
+}
+
+.genreinfo {
+    width: 400px;
+    color: white;
+    margin-left: 60px;
+    padding-top: 7px;
+    letter-spacing: 0.25rem;
+    font-family: cursive;
+}
+
+.sect3 {
+    gap: 50px;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+.leftimg {
+    width: 48%;
+    height: 670px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-size: cover;
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/aqZdSwWyy9JcQ66BxHDKrky6.jpg);
+}
+
+.rightimg {
+    width: 52%;
+    height: 670px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-size: cover;
+    background-image: url(https://blog.playstation.com/tachyon/2023/12/56935f822f365f2cae0282333bf9f2e60dcb4211.jpg?resize=1088%2C612&crop_strategy=smart);
+}
+
+
+.sect4 {
+    width: 100%;
+    height: 140px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+.gameplay {
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-left: 40px;
+    padding-top: 35px;
+}
+
+.videospace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+video {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(3, 253, 128);
+
+}
+
+.sect5 {
+    width: 100%;
+    height: 1300px;
+}
+
+.sect6 {
+    width: 100%;
+    height: 140px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+.sect7 {
+    width: 100%;
+    height: 850px;
+}
+
+
+.gamename {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #09f1b8;
+    font-size: 40px;
+    letter-spacing: 0.30rem;
+    width: fit-content;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.gameinfo {
+    font-family: cursive;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 0.30rem;
+    width: fit-content;
+    margin-left: 15px;
+}
+
+.row1 {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container1 {
+    gap: 40px;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    height: 830px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+
+}
+
+.cont1info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://oyster.ignimgs.com/mediawiki/apis.ign.com/god-of-war-ragnarok/d/dc/Kratos.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card2 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://oyster.ignimgs.com/mediawiki/apis.ign.com/god-of-war-ragnarok/1/1b/Ater.jpg);
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.sect8 {
+    width: 100%;
+    height: 180px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+.textspace {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.goback {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #09f1b8;
+    font-size: 40px;
+    letter-spacing: 0.30rem;
+    width: fit-content;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.wishlist {
+    background-color: #FF4500;
+    width: 550px;
+    font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.4s all ease;
+    -webkit-text-stroke: black 1.4px;
+    cursor: pointer;
+}
+
+.wishlist:hover {
+    box-shadow: 0px 0px 10px 3px rgb(3, 253, 128);
+}
+
+.nextgame {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #09f1b8;
+    font-size: 40px;
+    letter-spacing: 0.30rem;
+    width: fit-content;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+.sect9 {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    justify-content: center;
+}
+
+.footer {
+    padding: 70px;
+}
+
+.footer-col {
+    width: 25%;
+    height: 200px;
+}
+
+.contactanchor {
+    left: 2px;
+    width: fit-content;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 23px !important;
+}
+
+.footsocContainer {
+    margin-top: 20px;
+}
+
+.footsocial2 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.footer-col h4 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li a {
+    position: relative;
+    right: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.lorem1 {
+    width: 290px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.loremcont {
+    list-style: none;
+}
+
+.footsub {
+    display: flex;
+    flex-direction: column;
+}
+
+.inptlab {
+    position: relative;
+    color: grey;
+    width: fit-content;
+}
+
+.eminpt {
+    position: relative;
+    background-color: transparent;
+    border: 1px grey solid;
+    height: 40px;
+    width: 300px;
+    color: white;
+    padding: 10px;
+}
+
+.subbtn {
+    top: 10px;
+    position: relative;
+    background-color: orangered;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.subbtn:hover {
+    background-color: #ff8000;
+}
+
+.social-links {
+    position: relative;
+
+}
+
+.footer-col .social-links .footsocial {
+
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links .footsocial:hover {
+    color: black;
+    background-color: #ffffff;
+}
+
+/* მას google chrome_ის inspect_ში რომ გადავედი ზემოთ ეწერა ტაბლეტის და ტელეფონების ზომები და იმ სომებზე განვალაგე რესპონსიურობა */
+@media screen and (max-width: 1440px) {
+    .headul {
+        margin-left: 50px;
+    }
+
+    .btns .fa-bars {
+        display: inline-block;
+    }
+
+    .leftimg {
+        height: 450px;
+        width: 660px;
+        object-fit: cover;
+    }
+
+    .rightimg {
+        height: 450px;
+        width: 660px;
+        object-fit: cover;
+    }
+
+    .sect3 {
+        height: 600px;
+    }
+
+    .rdrtrailer {
+        width: 1200px;
+    }
+
+    .sect5 {
+        height: 1000px;
+    }
+
+    .container1 {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        height: 450px;
+        width: 660px;
+        object-fit: cover;
+    }
+
+    .sect7 {
+        height: 700px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .headul {
+        gap: 20px;
+        margin-right: 230px;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    .leftimg {
+        height: 300px;
+        width: 660px;
+        object-fit: cover;
+    }
+
+    .rightimg {
+        height: 300px;
+        width: 660px;
+        object-fit: cover;
+    }
+
+    .sect3 {
+        height: 500px;
+    }
+
+    .rdrtrailer {
+        width: 920px;
+    }
+
+    .sect5 {
+        height: 1000px;
+    }
+
+    .container1 {
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        height: 300px;
+        width: 460px;
+        object-fit: cover;
+    }
+
+    .sect7 {
+        height: 500px;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        display: flex;
+        gap: 100px;
+        margin-right: 70px;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .footsocial2::before {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .sect9 {
+        height: 350px;
+    }
+
+    .wishlist {
+        height: 100px;
+        width: 700px;
+    }
+
+    .nextgame {
+        width: 400px;
+    }
+
+    .textspace {
+        display: flex;
+        gap: 60px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .headul {
+        gap: 20px;
+        width: 1000px;
+    }
+
+    .btns .fa-bars {
+        display: none;
+    }
+
+    .maingamename {
+        font-size: 50px;
+    }
+
+    .leftimg {
+        width: 700px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .rightimg {
+        width: 700px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .sect3 {
+        height: 360px;
+    }
+
+    .rdrtrailer {
+        width: 700px;
+    }
+
+    .sect5 {
+        height: 600px;
+    }
+
+    .descripP {
+        width: 250px;
+    }
+
+    .genreinfo {
+        width: fit-content;
+    }
+
+    .sect2 {
+        height: 500px;
+    }
+
+    .card {
+        height: 200px;
+        width: 360px;
+        object-fit: cover;
+    }
+
+    .sect7 {
+        height: 400px;
+    }
+
+    .nextgame {
+        display: none;
+    }
+
+    .goback {
+        display: none;
+    }
+
+    .wishlist {
+        width: 550px;
+        margin-top: 35px;
+        margin-left: 25px;
+
+    }
+
+    .container1 {
+        flex-wrap: nowrap;
+        display: flex;
+        gap: 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        align-items: center;
+    }
+
+    .sect9 {
+        height: 1200px;
+    }
+
+    .sect8 {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .textspace {
+        display: inline;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .footsocial2::before {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    header ul {
+        display: none !important;
+    }
+
+    .fa-bars {
+        display: inline-block !important;
+    }
+
+    .btns {
+        margin: auto;
+        gap: 20px;
+    }
+
+
+
+
+}

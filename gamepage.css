@@ -1,0 +1,782 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #010127;
+}
+
+.parentsect {
+    opacity: 0;
+    animation: animatecontect 3s ease forwards;
+}
+
+.parentsect .active {
+    display: none;
+}
+
+@keyframes animatecontect {
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 70px;
+    align-items: center;
+    padding-inline: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    transition: background-color 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px 5px black;
+
+}
+
+header.scrolledsecond {
+    background-color: #150b43;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+hr {
+    position: relative;
+    bottom: 460px;
+
+}
+
+.headul {
+    display: flex;
+    gap: 70px;
+    margin-left: 320px;
+}
+
+.lists {
+    list-style: none;
+    transition: 0.4s all ease;
+    font-size: larger;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Bungee Spice', sans-serif;
+    width: fit-content;
+}
+
+.lists:hover {
+    color: #000;
+    background-color: #009a73;
+    font-size: 25px;
+    box-shadow: 0px 0px 10px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.lists:active {
+    background-color: rgb(3, 253, 128);
+}
+
+li::marker {
+    color: white;
+}
+
+i {
+    color: rgb(226, 106, 0);
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.account {
+    background: linear-gradient(to bottom, #F0B000,
+            #F029A0);
+    border-radius: 12px;
+    padding: 5px;
+    width: 150px;
+    transition: 0.4s;
+    border: 2px solid;
+}
+
+
+.account:hover {
+    box-shadow: 0px 0px 10px 3px rgb(3, 253, 128);
+    border-radius: 10px;
+}
+
+.fa-gamepad {
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.fa-store {
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 5s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.count {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+
+.fa-2xl {
+    transition: 0.4s;
+}
+
+.fa-2xl:hover {
+    box-shadow: 0px 0px 20px 7px rgb(3, 253, 128);
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+}
+
+
+.navanchor {
+    color: rgb(226, 106, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}
+
+.account {
+    color: black;
+    -webkit-text-stroke: black 0px;
+}
+
+.secnavbar {
+    width: 100%;
+    height: 1000px;
+    background-color: #201553;
+    display: none;
+}
+
+.secnavbar.active {
+    display: block;
+    margin: auto;
+
+}
+
+.respo {
+    display: flex;
+    flex-direction: column;
+}
+
+.secul {
+    margin-top: 200px !important;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.navanchor2 {
+    font-size: 50px;
+}
+
+
+
+.sect1 {
+    height: 80px;
+}
+
+@keyframes gradient {
+
+    0% {
+
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+
+        background-position: 0% 50%;
+
+    }
+
+}
+
+
+
+.sect2 {
+    margin-top: 60px;
+    width: 100%;
+    height: 150px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+    display: flex;
+    gap: 300px;
+}
+
+#search {
+    margin-top: 50px;
+    height: 70px;
+    width: 1000px;
+    background-color: transparent;
+    outline: none !important;
+    border: none;
+    box-shadow: 0px 1px 0px 0px #09f1b8;
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+::placeholder {
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.portfolioh1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #09f1b8;
+    font-size: 70px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+
+.sect3 {
+    width: 100%;
+    height: 2850px;
+}
+
+.text1 {
+    width: 600px;
+}
+
+.gamename {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #09f1b8;
+    font-size: 40px;
+    letter-spacing: 0.30rem;
+    width: fit-content;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.gameinfo {
+    font-family: cursive;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 0.30rem;
+    width: fit-content;
+    margin-left: 15px;
+}
+
+.row1 {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container1 {
+    gap: 40px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+
+.cont1info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://wallpapercosmos.com/w/full/8/7/5/663-3840x2160-desktop-4k-red-dead-redemption-wallpaper-photo.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card2 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://i.ytimg.com/vi/mdySPXFtDSU/maxresdefault.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card3 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://wallpapercosmos.com/w/full/9/9/5/6259-3840x2160-desktop-4k-call-of-duty-wallpaper.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card4 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://i.pinimg.com/originals/cb/ef/68/cbef687043e4e5c26087d71b37cb5009.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card5 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://wallpaperswide.com/download/cyberpunk_2077_4k-wallpaper-3840x2160.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.card6 {
+    width: 1192px;
+    height: 670px;
+    border-radius: 20px;
+    background-image: url(https://images2.alphacoders.com/581/581828.jpg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+.fading {
+    margin-top: 50px;
+    width: 100%;
+    height: 1000px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.fading.scrolledfade {
+    opacity: 1;
+}
+
+.card {
+    transition: 0.5s all ease;
+}
+
+.hiddenEnter {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0);
+    width: 90px;
+}
+
+.card:hover {
+    box-shadow: inset 0px 0px 200px rgb(0, 255, 170);
+
+    .hiddenEnter {
+        display: inline;
+    }
+}
+
+
+
+
+
+/* მეოთხე სექცია */
+.sect4 {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 0px 0.3px 1px rgb(255, 255, 255);
+}
+
+.footer {
+    padding: 70px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    justify-content: center;
+}
+
+.footer-col {
+    width: 25%;
+    height: 200px;
+}
+
+.contactanchor {
+    left: 2px;
+    width: fit-content;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 23px !important;
+}
+
+.footsocContainer {
+    margin-top: 20px;
+}
+
+.footsocial2 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.footer-col h4 {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li a {
+    position: relative;
+    right: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.lorem1 {
+    width: 290px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.loremcont {
+    list-style: none;
+}
+
+.footsub {
+    display: flex;
+    flex-direction: column;
+}
+
+.inptlab {
+    position: relative;
+    color: grey;
+    width: fit-content;
+}
+
+.eminpt {
+    position: relative;
+    background-color: transparent;
+    border: 1px grey solid;
+    height: 40px;
+    width: 300px;
+    color: white;
+    padding: 10px;
+}
+
+.subbtn {
+    top: 10px;
+    position: relative;
+    background-color: orangered;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.subbtn:hover {
+    background-color: #ff8000;
+}
+
+.social-links {
+    position: relative;
+
+}
+
+.footer-col .social-links .footsocial {
+
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links .footsocial:hover {
+    color: black;
+    background-color: #ffffff;
+}
+
+/* მას google chrome_ის inspect_ში რომ გადავედი ზემოთ ეწერა ტაბლეტის და ტელეფონების ზომები და იმ სომებზე განვალაგე რესპონსიურობა */
+@media screen and (max-width: 1440px) {
+    .headul {
+        margin-left: 50px;
+    }
+
+    .btns .fa-bars {
+        display: inline-block;
+    }
+
+    .card {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .card1 {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .container1 {
+        display: flex;
+    }
+
+    .cont1info {
+        display: block;
+    }
+
+    .sect3 {
+        height: 2000px;
+    }
+
+    .sect2 {
+        gap: 120px;
+    }
+
+    #search {
+        width: 800px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .headul {
+        gap: 20px;
+        margin-right: 210px;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    .card {
+        width: 400px;
+        height: 270px;
+        object-fit: cover;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 120px;
+        margin-right: 70px;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .footsocial2::before {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .container1 {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .cont1info {
+        display: block;
+    }
+
+    .textspace {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .sect2 {
+        gap: 60px;
+    }
+
+    #search {
+        width: 500px;
+    }
+
+    .text1 {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .headul {
+        gap: 0px;
+    }
+
+    .lists {
+        width: 150px;
+    }
+
+    .btns .fa-bars {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .footsocial2::before {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .container1 {
+        margin: auto;
+    }
+
+    .text1 {
+        width: 320px;
+    }
+
+    .sect3 {
+        height: 1400px;
+    }
+
+    .sect4 {
+        height: 1200px;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    #search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header ul {
+        display: none !important;
+    }
+
+    .fa-bars {
+        display: inline-block !important;
+    }
+
+    .btns {
+        margin: auto;
+        gap: 20px;
+    }
+
+    .row1 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .listsec {
+        width: fit-content;
+    }
+
+    .sect2 {
+        margin: 0px;
+    }
+
+}
